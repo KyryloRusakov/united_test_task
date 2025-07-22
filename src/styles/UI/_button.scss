@@ -1,0 +1,74 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  border: none;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+
+  &:disabled {
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  .icon-arrow {
+    width: 24px;
+    height: 24px;
+    margin-left: 6px;
+  }
+}
+
+.button-primary {
+  width: 100%;
+  margin-top: 8px;
+  background-color: #150954;
+  color: #fff;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #0c023f;
+  }
+
+  @media (min-width: 480px) {
+    max-width: 400px;
+    margin-top: 16px;
+  }
+}
+
+.button-link {
+  background: none;
+  border: none;
+  color: #353538;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+.button-light {
+  padding: 10px 24px;
+  background-color: #fff;
+  color: #111212;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.2;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px 0px rgba(52, 58, 63, 0.12);
+
+  &:hover {
+    background-color: #f1f1f1;
+  }
+
+  .cookie & {
+    align-self: center;
+  }
+}

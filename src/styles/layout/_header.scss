@@ -1,0 +1,41 @@
+.header {
+  height: 56px;
+  padding: 8px 0;
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &.center-logo {
+      justify-content: center;
+    }
+  }
+
+  .header-logo img {
+    display: block;
+    height: 40px;
+    width: 139px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    @supports (-webkit-blend-mode: plus-darker) {
+      mix-blend-mode: plus-darker;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .button-link {
+    display: none;
+  }
+
+  @media (min-width: 1280px) {
+    .button-link {
+      display: inline-block;
+    }
+  }
+}
